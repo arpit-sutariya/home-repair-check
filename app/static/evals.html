@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evals · Home Repair Check</title>
+  <meta name="description" content="How accurate Home Repair Check is on real photos, homeowner descriptions and safety emergencies, with held-out results and calibration.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232370cd'/%3E%3Cpath d='M8 16l8-7 8 7v8H8z' fill='none' stroke='white' stroke-width='2.4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script>try { const t = localStorage.getItem("rc.theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+  <link rel="stylesheet" href="/static/app.css?v=4">
+  <link rel="stylesheet" href="/static/evals.css?v=4">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M8 16l8-7 8 7v8H8z"/></svg>
+      Home Repair Check
+    </a>
+    <nav>
+      <a href="/">Try it</a>
+      <a href="/evals" aria-current="page">Evals</a>
+      <a href="https://github.com/arpit-sutariya/home-repair-check" target="_blank" rel="noopener">GitHub</a>
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch light or dark theme"></button>
+    </nav>
+  </header>
+
+  <main class="ev" style="padding-top:44px">
+    <section class="hero">
+      <p class="eyebrow">Evaluation report</p>
+      <h1>How well does it work?</h1>
+      <p class="lede">Three things are measured separately: reading photos, reading descriptions, and catching emergencies. The AI only does the first two; the safety rules are plain code. Every number here comes from <code>python -m eval.run_eval</code><span id="runat"></span>.</p>
+    </section>
+    <div id="ev"><div class="loading"><div class="skeleton"></div><div class="skeleton"></div></div></div>
+  </main>
+
+  <footer>
+    <p>Test photos: <a href="https://huggingface.co/datasets/senthilsk/crack_detection_dataset" target="_blank" rel="noopener">senthilsk/crack_detection_dataset</a> (CC BY 4.0), 15 per class. Descriptions and safety cases were written by the author before the first run. The test sets are small, so treat differences of a few points as noise.</p>
+  </footer>
+  <div class="tip" id="tip" role="tooltip" hidden></div>
+  <script src="/static/evals.js?v=4"></script>
+</body>
+</html>

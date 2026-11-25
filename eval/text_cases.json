@@ -1,0 +1,197 @@
+{
+ "_note": "Written by the author before the first eval run, in casual homeowner wording. Not tuned on.",
+ "cases": [
+  {
+   "text": "theres a yellowish ring on my ceiling right below the upstairs tub",
+   "label": "water_stain"
+  },
+  {
+   "text": "after the last storm a dark patch showed up where the wall meets the ceiling",
+   "label": "water_stain"
+  },
+  {
+   "text": "the drywall under our bathroom feels kinda soft and there's a stain",
+   "label": "water_stain"
+  },
+  {
+   "text": "we noticed brown marks spreading on the living room ceiling",
+   "label": "water_stain"
+  },
+  {
+   "text": "there's a damp spot on the wall behind the fridge that keeps coming back",
+   "label": "water_stain"
+  },
+  {
+   "text": "paint is bubbling on the ceiling and it looks discolored",
+   "label": "water_stain"
+  },
+  {
+   "text": "water pooling in the cabinet under my kitchen sink",
+   "label": "plumbing_leak"
+  },
+  {
+   "text": "the pipe under the bathroom sink drips constantly",
+   "label": "plumbing_leak"
+  },
+  {
+   "text": "my water heater has a small puddle around the bottom",
+   "label": "plumbing_leak"
+  },
+  {
+   "text": "toilet leaks at the base every time we flush",
+   "label": "plumbing_leak"
+  },
+  {
+   "text": "faucet keeps dripping even when its fully off",
+   "label": "plumbing_leak"
+  },
+  {
+   "text": "the hose going into the dishwasher is leaking under the counter",
+   "label": "plumbing_leak"
+  },
+  {
+   "text": "black spots growing in the corner of the shower ceiling",
+   "label": "mold"
+  },
+  {
+   "text": "the closet smells musty and theres greenish fuzz on the back wall",
+   "label": "mold"
+  },
+  {
+   "text": "white fuzzy stuff on the basement wall near the floor",
+   "label": "mold"
+  },
+  {
+   "text": "mildew keeps coming back on the bathroom window frame",
+   "label": "mold"
+  },
+  {
+   "text": "dark speckles behind the couch on the outside wall",
+   "label": "mold"
+  },
+  {
+   "text": "my kid's room has black dots along the ceiling edge",
+   "label": "mold"
+  },
+  {
+   "text": "thin crack running from the corner of the door frame",
+   "label": "wall_crack"
+  },
+  {
+   "text": "hairline line in the drywall above the window",
+   "label": "wall_crack"
+  },
+  {
+   "text": "small crack across the living room ceiling",
+   "label": "wall_crack"
+  },
+  {
+   "text": "the plaster has a few fine cracks in the hallway",
+   "label": "wall_crack"
+  },
+  {
+   "text": "there's a straight crack where two drywall sheets meet",
+   "label": "wall_crack"
+  },
+  {
+   "text": "noticed a crack in the garage floor concrete",
+   "label": "wall_crack"
+  },
+  {
+   "text": "zig zag crack going up the brick on the side of the house",
+   "label": "foundation_crack"
+  },
+  {
+   "text": "crack in the basement wall and water seeps in when it rains",
+   "label": "foundation_crack"
+  },
+  {
+   "text": "the mortar between the bricks is cracking in a stair pattern",
+   "label": "foundation_crack"
+  },
+  {
+   "text": "there's a wide crack in our cinder block foundation",
+   "label": "foundation_crack"
+  },
+  {
+   "text": "crack in the foundation got bigger since spring and the floor slopes",
+   "label": "foundation_crack"
+  },
+  {
+   "text": "outside brick wall has a crack following the mortar lines",
+   "label": "foundation_crack"
+  },
+  {
+   "text": "paint is flaking off the bathroom ceiling",
+   "label": "peeling_paint"
+  },
+  {
+   "text": "the paint on the window trim is chipping and peeling",
+   "label": "peeling_paint"
+  },
+  {
+   "text": "big strips of paint peeling off the hallway wall",
+   "label": "peeling_paint"
+  },
+  {
+   "text": "paint blistering on the wall next to the shower",
+   "label": "peeling_paint"
+  },
+  {
+   "text": "old paint coming off in flakes in the basement",
+   "label": "peeling_paint"
+  },
+  {
+   "text": "the kitchen wall has paint lifting off in patches",
+   "label": "peeling_paint"
+  },
+  {
+   "text": "wind tore a few shingles off the roof",
+   "label": "roof_damage"
+  },
+  {
+   "text": "shingles are curling up on the south side",
+   "label": "roof_damage"
+  },
+  {
+   "text": "found pieces of shingle in the yard after the storm",
+   "label": "roof_damage"
+  },
+  {
+   "text": "lots of grit from the shingles in the gutters",
+   "label": "roof_damage"
+  },
+  {
+   "text": "i can see daylight through the attic boards",
+   "label": "roof_damage"
+  },
+  {
+   "text": "part of the roof looks like its missing some tiles after hail",
+   "label": "roof_damage"
+  },
+  {
+   "text": "the plug socket in the kitchen is hot to the touch",
+   "label": "outlet_damage"
+  },
+  {
+   "text": "outlet cover is cracked and the outlet is loose",
+   "label": "outlet_damage"
+  },
+  {
+   "text": "theres a black scorch mark around one of the holes in the outlet",
+   "label": "outlet_damage"
+  },
+  {
+   "text": "the outlet buzzes when the space heater is plugged in",
+   "label": "outlet_damage"
+  },
+  {
+   "text": "my bedroom socket stopped working and looks a little melted",
+   "label": "outlet_damage"
+  },
+  {
+   "text": "plugs fall out of the outlet in the living room",
+   "label": "outlet_damage"
+  }
+ ]
+}

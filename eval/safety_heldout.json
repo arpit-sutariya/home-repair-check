@@ -1,0 +1,147 @@
+{
+ "_note": "Held-out set, written after the first safety eval exposed misses and BEFORE the rules were changed or re-run. The rules were not tuned on these.",
+ "positives": [
+  {
+   "text": "strong smell like rotten eggs in the garage",
+   "hazard": "gas"
+  },
+  {
+   "text": "the pilot light is out and I can smell gas",
+   "hazard": "gas"
+  },
+  {
+   "text": "I hear a hissing near the gas line behind the dryer",
+   "hazard": "gas"
+  },
+  {
+   "text": "the outlet made a loud pop and a spark shot out",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "black smoke came out of the wall socket",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "the light switch is scorched and smells like burnt plastic",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "the wires behind the outlet look melted",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "there's a burning smell every time the heater runs",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "rain is dripping into the electrical box outside",
+   "hazard": "water_and_power"
+  },
+  {
+   "text": "the ceiling light filled up with water",
+   "hazard": "water_and_power"
+  },
+  {
+   "text": "water is running down the wall onto the power strip",
+   "hazard": "water_and_power"
+  },
+  {
+   "text": "the bathroom ceiling has a huge bulge and it looks like it might burst",
+   "hazard": "ceiling_collapse"
+  },
+  {
+   "text": "part of the ceiling is drooping down after the pipe burst",
+   "hazard": "ceiling_collapse"
+  },
+  {
+   "text": "the kitchen ceiling is swelling and wet",
+   "hazard": "ceiling_collapse"
+  },
+  {
+   "text": "the carbon monoxide alarm went off in the hallway",
+   "hazard": "carbon_monoxide"
+  },
+  {
+   "text": "our CO detector is reading high",
+   "hazard": "carbon_monoxide"
+  },
+  {
+   "text": "raw sewage overflowing from the toilet",
+   "hazard": "sewage"
+  },
+  {
+   "text": "the floor drain is pushing up brown water that smells like sewer",
+   "hazard": "sewage"
+  },
+  {
+   "text": "there's a smell of gas near the stove even with the knobs off",
+   "hazard": "gas"
+  },
+  {
+   "text": "the extension cord is smoking",
+   "hazard": "electrical_fire"
+  }
+ ],
+ "negatives": [
+  {
+   "text": "I need to light the pilot on my water heater, how do I do that"
+  },
+  {
+   "text": "the smoke detector chirps every few minutes"
+  },
+  {
+   "text": "my car's spark plugs need changing"
+  },
+  {
+   "text": "the gas stove takes a while to heat up"
+  },
+  {
+   "text": "the ceiling paint has a few small bubbles"
+  },
+  {
+   "text": "the outlet cover plate is cracked"
+  },
+  {
+   "text": "the bathroom fan is noisy"
+  },
+  {
+   "text": "the toilet is clogged but not overflowing"
+  },
+  {
+   "text": "I burned some popcorn and the kitchen smells"
+  },
+  {
+   "text": "water drips from the faucet at night"
+  },
+  {
+   "text": "there's a crack in the ceiling drywall"
+  },
+  {
+   "text": "the light flickers sometimes"
+  },
+  {
+   "text": "we have a gas furnace, is that normal maintenance"
+  },
+  {
+   "text": "the sink drain gurgles"
+  },
+  {
+   "text": "my power strip stopped working"
+  },
+  {
+   "text": "the attic has some old water stains"
+  },
+  {
+   "text": "I want to install a CO detector"
+  },
+  {
+   "text": "the fireplace leaves soot on the wall"
+  },
+  {
+   "text": "the basement smells damp"
+  },
+  {
+   "text": "the ceiling fan wobbles"
+  }
+ ]
+}

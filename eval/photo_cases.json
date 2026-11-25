@@ -1,0 +1,457 @@
+{
+ "_source": "Photos: Hugging Face dataset senthilsk/crack_detection_dataset (Roboflow 'detr_crack_dataset'), license CC BY 4.0. 15 distinct photos per class from the train split; downloaded when the eval runs, not stored in this repo. Labels are the dataset's, mapped to this app's problem types.",
+ "dataset": "senthilsk/crack_detection_dataset",
+ "archive": "data/train.zip",
+ "photos": [
+  {
+   "file": "crack-01.jpg",
+   "source": "data/train.zip:00001_jpg.rf.ef0271a074c4170b5c620387bb4af132.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-02.jpg",
+   "source": "data/train.zip:00128_jpg.rf.9f4be4b130c69982c3da46e599ed0b58.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-03.jpg",
+   "source": "data/train.zip:Ashworth-Drainage-Crack-Repair-1024x683_jpg.rf.0c08174a7162cfc9f74da160f199a2e5.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-04.jpg",
+   "source": "data/train.zip:crack-1143-_jpg.rf.1b3a817a890af820963b19e1e30c28d3.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-05.jpg",
+   "source": "data/train.zip:crack-1319-_jpg.rf.dfdc256cca898192674e76b0f19cd0af.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-06.jpg",
+   "source": "data/train.zip:crack-1512-_jpg.rf.3b450fd1452d4e40ca870b12d1db4b00.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-07.jpg",
+   "source": "data/train.zip:crack-1687-_jpg.rf.477a81e7672bc3925b04787fa68b6a67.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-08.jpg",
+   "source": "data/train.zip:crack-1874-_jpg.rf.b4c82a7f0bc17c90bcdd4fb3e2c708cb.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-09.jpg",
+   "source": "data/train.zip:crack-2058-_jpg.rf.31e55eabe12211f49a31223fbdb7b05a.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-10.jpg",
+   "source": "data/train.zip:crack-2259-_jpg.rf.87540580df6cff81763053adcef0f4a9.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-11.jpg",
+   "source": "data/train.zip:crack-2423-_jpg.rf.a7093ef8fc65760a0cc0f7e4c074ba6c.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-12.jpg",
+   "source": "data/train.zip:crack-400-_jpg.rf.1dc8ad7cb86d83112ea71a900bef8e21.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-13.jpg",
+   "source": "data/train.zip:crack-596-_jpg.rf.890453a25e55091b1f50a9d299a0cf9d.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-14.jpg",
+   "source": "data/train.zip:crack-806-_jpg.rf.2ba564f9c2267d052dedfd9a80225993.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "crack-15.jpg",
+   "source": "data/train.zip:cracks-in-walls-and-ceilings-when-to-worry_jpg.rf.4dc236cefc6d1681524699c9534f495e.jpg",
+   "label": "wall_crack",
+   "dataset_label": "crack"
+  },
+  {
+   "file": "stairstep_crack-01.jpg",
+   "source": "data/train.zip:0707020002-02-Stair-Step-Cracks-and-Diagonal-Cracks_jpg.rf.f5ce3e5e6ef4c12cb93c4a8f01292716.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-02.jpg",
+   "source": "data/train.zip:DSC00047_jpg.rf.8fdc4ca44b034c099292b9ac20a1e24e.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-03.jpg",
+   "source": "data/train.zip:cracked-1_jpg.rf.d87921a6034fb3875ed3955451e8f67a.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-04.jpg",
+   "source": "data/train.zip:image22_jpeg.rf.df461e6b079cb7a6a24e7dfe7f5a6be7.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-05.jpg",
+   "source": "data/train.zip:images113_jpg.rf.11d698b60234511cac646013b077ae82.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-06.jpg",
+   "source": "data/train.zip:images156_jpg.rf.3d52fa2d9ae80f31b6ac248d33732dcc.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-07.jpg",
+   "source": "data/train.zip:images220_jpg.rf.53b8701e8171385846b5a89c1ee7a688.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-08.jpg",
+   "source": "data/train.zip:images303_jpg.rf.6d9ad0bcbfb9890541229e74c7dc46b9.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-09.jpg",
+   "source": "data/train.zip:images357_jpg.rf.49d6204e2be4d246ca5661c3e7250907.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-10.jpg",
+   "source": "data/train.zip:images438_jpg.rf.329b75eb99dbd5738ebc2be9ea29c821.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-11.jpg",
+   "source": "data/train.zip:images489_jpg.rf.345daeac1e53683da1e0f7df0e1deb9c.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-12.jpg",
+   "source": "data/train.zip:images537_jpg.rf.4e7776f32d60ccae9be4176e9fe4ed7a.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-13.jpg",
+   "source": "data/train.zip:images603_jpg.rf.711eca388141c97c8315ae33b46c3e1d.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-14.jpg",
+   "source": "data/train.zip:images669_jpg.rf.bb2a9f44359fb600ca51407fbd1f8816.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "stairstep_crack-15.jpg",
+   "source": "data/train.zip:images85_jpg.rf.40d6bf2ef760fe868542efdd83f62662.jpg",
+   "label": "foundation_crack",
+   "dataset_label": "stairstep_crack"
+  },
+  {
+   "file": "mold-01.jpg",
+   "source": "data/train.zip:istockphoto-1058990820-612x612_jpg.rf.127fdfe268cdc13f776def1343d05f2d.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-02.jpg",
+   "source": "data/train.zip:istockphoto-1094170854-612x612_jpg.rf.143fbcd878ac8fbf860dc37f8d300c9e.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-03.jpg",
+   "source": "data/train.zip:istockphoto-1095690108-612x612_jpg.rf.05482dba0281e51c6ef340e95ceb4586.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-04.jpg",
+   "source": "data/train.zip:istockphoto-1128049449-612x612_jpg.rf.c9af2c022233a90cc072161908eb351d.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-05.jpg",
+   "source": "data/train.zip:istockphoto-1134166886-612x612_jpg.rf.771bff647d71ff5335546ff1126acf33.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-06.jpg",
+   "source": "data/train.zip:istockphoto-1142516893-612x612_jpg.rf.a59a5c12934eb725cc387f7fbbe440d0.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-07.jpg",
+   "source": "data/train.zip:istockphoto-1146134037-612x612_jpg.rf.87a0d3ccae04f0038dca33db033ab356.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-08.jpg",
+   "source": "data/train.zip:istockphoto-1411623523-612x612_jpg.rf.7766ccfa06a8ee970b5422053fd53d9a.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-09.jpg",
+   "source": "data/train.zip:istockphoto-155076423-612x612_jpg.rf.47e059e558a0df5afeddc65a0a5fc254.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-10.jpg",
+   "source": "data/train.zip:istockphoto-510591296-612x612_jpg.rf.693aa31552662509021c4d09bf71d129.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-11.jpg",
+   "source": "data/train.zip:istockphoto-600374326-612x612_jpg.rf.0e4be1138e767de706e3dad6b8cbc476.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-12.jpg",
+   "source": "data/train.zip:istockphoto-812960886-612x612_jpg.rf.d9baf61ef4c59789a9b0474145886974.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-13.jpg",
+   "source": "data/train.zip:istockphoto-952950912-612x612_jpg.rf.6e8891a298ef152965d78bb3d798e0a5.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-14.jpg",
+   "source": "data/train.zip:mold-46e0c70e-dc70-11ed-b731-88b1113a23b0_jpg.rf.e1208d3e3aaae37cd8232387daea76d0.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "mold-15.jpg",
+   "source": "data/train.zip:mold-494b5fd5-dc70-11ed-8b4e-88b1113a23b0_jpeg.rf.a58a79cf2141f6c2d0cdb1a7c012967c.jpg",
+   "label": "mold",
+   "dataset_label": "mold"
+  },
+  {
+   "file": "water_seepage-01.jpg",
+   "source": "data/train.zip:istockphoto-1096185634-612x612_jpg.rf.882e0c15e6c78bbbd7d7bcbc3a73c4e9.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-02.jpg",
+   "source": "data/train.zip:istockphoto-1212704558-612x612_jpg.rf.9ecf35b33e86cd855d8dc5c671964cb1.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-03.jpg",
+   "source": "data/train.zip:istockphoto-1286549576-612x612_jpg.rf.5ffb8e0bdabf038dd912f6abac62f788.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-04.jpg",
+   "source": "data/train.zip:istockphoto-1325997309-612x612_jpg.rf.a92aedbeb0cffe9695a0cf292d46a72c.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-05.jpg",
+   "source": "data/train.zip:istockphoto-1351214454-612x612_jpg.rf.4429444aa2561224b67da7bd1516cb1b.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-06.jpg",
+   "source": "data/train.zip:istockphoto-1352969063-612x612_jpg.rf.88a87b821225eb4d09704e0f2d704225.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-07.jpg",
+   "source": "data/train.zip:istockphoto-1408648909-612x612_jpg.rf.395e2d87f51ecc95dca3655c64955de4.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-08.jpg",
+   "source": "data/train.zip:istockphoto-1415074673-612x612_jpg.rf.44a08dc74091be9f7b4bbb44d3c3dbae.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-09.jpg",
+   "source": "data/train.zip:istockphoto-603856512-612x612_jpg.rf.88ee23ceed8f2dd2cccded2f1de47612.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-10.jpg",
+   "source": "data/train.zip:istockphoto-671912586-612x612_jpg.rf.a3a677898224e4752bff5697ff6d5d2d.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-11.jpg",
+   "source": "data/train.zip:istockphoto-847318158-612x612_jpg.rf.913998742276d2259aa94dfea6357ebb.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-12.jpg",
+   "source": "data/train.zip:istockphoto-957479686-612x612_jpg.rf.b4cf00378ee9cc7095d0128399ca54f5.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-13.jpg",
+   "source": "data/train.zip:water_seepage-5aee15ff-dc70-11ed-a7c8-88b1113a23b0_jpg.rf.33dc0f8997ec0fdb11cdfe3e0a22b64b.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-14.jpg",
+   "source": "data/train.zip:water_seepage-5c2386a8-dc70-11ed-ba16-88b1113a23b0_jpg.rf.8cc89f285058623966820f4ae8f96efa.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "water_seepage-15.jpg",
+   "source": "data/train.zip:water_seepage-5d565ed6-dc70-11ed-a6c3-88b1113a23b0_jpg.rf.1287ed4c7b9d4e529debd0f218be3093.jpg",
+   "label": "water_stain",
+   "dataset_label": "water_seepage"
+  },
+  {
+   "file": "peeling_paint-01.jpg",
+   "source": "data/train.zip:3-Tricks-for-Repairing-Cracks-in-a-Wall_jpg.rf.7b29f6359249c621f2410ef7c8fd766c.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-02.jpg",
+   "source": "data/train.zip:istockphoto-1011313054-612x612_jpg.rf.9ff69a7ecfcb3d4cd404abe37b19cec0.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-03.jpg",
+   "source": "data/train.zip:istockphoto-1173095838-612x612_jpg.rf.dbe686386c855b239c4900490a81c080.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-04.jpg",
+   "source": "data/train.zip:istockphoto-1269177208-612x612_jpg.rf.1c45d04455c1834ce1db893f4d7b9685.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-05.jpg",
+   "source": "data/train.zip:istockphoto-1329831909-612x612_jpg.rf.00b2fdda2f531ebb48c0b69a031c197a.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-06.jpg",
+   "source": "data/train.zip:istockphoto-1370842481-612x612_jpg.rf.d4b43b35fed63256b6d799e877e8ea25.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-07.jpg",
+   "source": "data/train.zip:istockphoto-1389755558-612x612_jpg.rf.e7045f09f73f091ff567914824875910.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-08.jpg",
+   "source": "data/train.zip:istockphoto-1434161973-612x612_jpg.rf.bb05e8d0d71a9d824f643847c5ddac49.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-09.jpg",
+   "source": "data/train.zip:istockphoto-474369578-612x612_jpg.rf.d46b0f555a905dddfbc405d6e7628269.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-10.jpg",
+   "source": "data/train.zip:istockphoto-500537649-612x612_jpg.rf.29886b82d13b2480178d56dd72a5a98b.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-11.jpg",
+   "source": "data/train.zip:istockphoto-504416022-612x612_jpg.rf.76a6102c08211f21437b6298cdd48fb1.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-12.jpg",
+   "source": "data/train.zip:istockphoto-521231627-612x612_jpg.rf.26f6e57d30664efda05ff091aa715ca7.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-13.jpg",
+   "source": "data/train.zip:istockphoto-97483059-612x612_jpg.rf.cffb059edd517ae2ab180a845a53bb11.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-14.jpg",
+   "source": "data/train.zip:peeling-paint-wall-texture_1024x1024_jpg.rf.d98fbb0c2622fca742ceffd72091bdff.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  },
+  {
+   "file": "peeling_paint-15.jpg",
+   "source": "data/train.zip:peeling_paint-50e9287c-dc70-11ed-aedf-88b1113a23b0_jpg.rf.2cefc5d2c3cd5e594b4f036fe29c18ae.jpg",
+   "label": "peeling_paint",
+   "dataset_label": "peeling_paint"
+  }
+ ]
+}

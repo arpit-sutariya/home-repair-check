@@ -1,0 +1,270 @@
+{
+  "run_at": "2026-11-24",
+  "counts": {
+    "photos": 75,
+    "descriptions": 48
+  },
+  "photos": {
+    "local, plain prompts": {
+      "accuracy": 0.587,
+      "ece": 0.093,
+      "reliability": [
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "n": 6,
+          "confidence": 0.374,
+          "accuracy": 0.167
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "n": 25,
+          "confidence": 0.496,
+          "accuracy": 0.44
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "n": 17,
+          "confidence": 0.682,
+          "accuracy": 0.529
+        },
+        {
+          "range": [
+            0.8,
+            1.0
+          ],
+          "n": 27,
+          "confidence": 0.916,
+          "accuracy": 0.852
+        }
+      ],
+      "confusion": {
+        "foundation_crack": {
+          "foundation_crack": 13,
+          "wall_crack": 2
+        },
+        "mold": {
+          "mold": 13,
+          "water_stain": 1,
+          "wall_crack": 1
+        },
+        "peeling_paint": {
+          "wall_crack": 6,
+          "peeling_paint": 5,
+          "mold": 3,
+          "outlet_damage": 1
+        },
+        "wall_crack": {
+          "foundation_crack": 9,
+          "wall_crack": 4,
+          "mold": 1,
+          "water_stain": 1
+        },
+        "water_stain": {
+          "water_stain": 9,
+          "mold": 5,
+          "plumbing_leak": 1
+        }
+      },
+      "top2": 0.827,
+      "said_not_sure": 13,
+      "accuracy_when_sure": 0.629,
+      "accuracy_when_not_sure": 0.385,
+      "per_problem": {
+        "foundation_crack": "13/15",
+        "mold": "13/15",
+        "peeling_paint": "5/15",
+        "wall_crack": "4/15",
+        "water_stain": "9/15"
+      },
+      "common_mistakes": [
+        "wall_crack -> foundation_crack (9)",
+        "peeling_paint -> wall_crack (6)",
+        "water_stain -> mold (5)",
+        "peeling_paint -> mold (3)"
+      ],
+      "median_ms": 14
+    },
+    "local, written visual cues (used)": {
+      "accuracy": 0.813,
+      "ece": 0.097,
+      "reliability": [
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "n": 3,
+          "confidence": 0.33,
+          "accuracy": 0.0
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "n": 16,
+          "confidence": 0.531,
+          "accuracy": 0.5
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "n": 19,
+          "confidence": 0.712,
+          "accuracy": 0.895
+        },
+        {
+          "range": [
+            0.8,
+            1.0
+          ],
+          "n": 37,
+          "confidence": 0.911,
+          "accuracy": 0.973
+        }
+      ],
+      "confusion": {
+        "foundation_crack": {
+          "foundation_crack": 15
+        },
+        "mold": {
+          "mold": 8,
+          "water_stain": 5,
+          "plumbing_leak": 1,
+          "wall_crack": 1
+        },
+        "peeling_paint": {
+          "wall_crack": 1,
+          "peeling_paint": 10,
+          "water_stain": 1,
+          "roof_damage": 1,
+          "plumbing_leak": 1,
+          "mold": 1
+        },
+        "wall_crack": {
+          "wall_crack": 15
+        },
+        "water_stain": {
+          "water_stain": 13,
+          "wall_crack": 1,
+          "plumbing_leak": 1
+        }
+      },
+      "top2": 0.92,
+      "said_not_sure": 4,
+      "accuracy_when_sure": 0.859,
+      "accuracy_when_not_sure": 0.0,
+      "per_problem": {
+        "foundation_crack": "15/15",
+        "mold": "8/15",
+        "peeling_paint": "10/15",
+        "wall_crack": "15/15",
+        "water_stain": "13/15"
+      },
+      "common_mistakes": [
+        "mold -> water_stain (5)",
+        "mold -> plumbing_leak (1)",
+        "mold -> wall_crack (1)",
+        "water_stain -> wall_crack (1)"
+      ],
+      "median_ms": 14
+    }
+  },
+  "descriptions": {
+    "local text model (used)": {
+      "accuracy": 0.917,
+      "ece": 0.048,
+      "reliability": [
+        {
+          "range": [
+            0.2,
+            0.4
+          ],
+          "n": 1,
+          "confidence": 0.298,
+          "accuracy": 0.0
+        },
+        {
+          "range": [
+            0.4,
+            0.6
+          ],
+          "n": 5,
+          "confidence": 0.465,
+          "accuracy": 0.6
+        },
+        {
+          "range": [
+            0.6,
+            0.8
+          ],
+          "n": 5,
+          "confidence": 0.745,
+          "accuracy": 1.0
+        },
+        {
+          "range": [
+            0.8,
+            1.0
+          ],
+          "n": 37,
+          "confidence": 0.975,
+          "accuracy": 0.973
+        }
+      ],
+      "per_problem": {
+        "water_stain": "4/6",
+        "plumbing_leak": "6/6",
+        "mold": "5/6",
+        "wall_crack": "6/6",
+        "foundation_crack": "6/6",
+        "peeling_paint": "6/6",
+        "roof_damage": "5/6",
+        "outlet_damage": "6/6"
+      },
+      "mistakes": [
+        "\"there's a damp spot on the wall behind the fridge that keeps coming back\": expected water_stain, got peeling_paint",
+        "'paint is bubbling on the ceiling and it looks discolored': expected water_stain, got peeling_paint",
+        "'dark speckles behind the couch on the outside wall': expected mold, got wall_crack",
+        "'i can see daylight through the attic boards': expected roof_damage, got wall_crack"
+      ]
+    }
+  },
+  "safety": {
+    "emergencies": 30,
+    "caught_right_warning": 30,
+    "caught_any_warning": 30,
+    "missed": [],
+    "near_misses": 30,
+    "false_alarms": 0,
+    "false_alarm_examples": []
+  },
+  "safety_heldout": {
+    "emergencies": 20,
+    "caught_right_warning": 20,
+    "caught_any_warning": 20,
+    "missed": [],
+    "near_misses": 20,
+    "false_alarms": 0,
+    "false_alarm_examples": []
+  },
+  "safety_heldout_first_run": {
+    "caught": "19/20",
+    "false_alarms": "0/20",
+    "missed": [
+      "water is running down the wall onto the power strip"
+    ],
+    "note": "Recorded before that miss was fixed."
+  }
+}

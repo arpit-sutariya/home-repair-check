@@ -1,0 +1,721 @@
+{
+  "_about": "Everything the app knows about home problems. Costs are typical US national ranges from the public cost guides linked in each entry (checked November 2026). Local prices vary; they are a sanity check, not a quote.",
+  "issues": [
+    {
+      "id": "water_stain",
+      "name": "Water stain or leak in a ceiling or wall",
+      "short": "water is getting in from somewhere above or behind the stain",
+      "photo_cues": [
+        "a brown or yellow water stain on a ceiling",
+        "a damp water stain spreading on a wall",
+        "water damage and discoloration on drywall"
+      ],
+      "symptoms": "brown or yellow stain on the ceiling or wall, ring-shaped mark, damp spot, bubbling paint, drip from the ceiling, stain under a bathroom or near a roof",
+      "base_severity": 3,
+      "worse_if": [
+        "drip",
+        "dripping",
+        "wet",
+        "damp",
+        "growing",
+        "spreading",
+        "getting bigger",
+        "soft",
+        "after rain",
+        "every time"
+      ],
+      "trade": "a plumber or roofer to find and stop the leak, then a drywall pro for the stain",
+      "diy": "Find and fix the source first. Painting over a stain before the leak is fixed hides the problem.",
+      "now": [
+        "Check what's directly above the stain: a bathroom, a pipe, the roof or an AC unit.",
+        "Mark the edge of the stain with a pencil and check again in a day to see if it's growing.",
+        "If it's dripping, put a bucket under it and turn off the water to that bathroom if you can."
+      ],
+      "tiers": [
+        {
+          "name": "Fix the leak (plumbing)",
+          "low": 50,
+          "high": 800,
+          "typical": 350,
+          "source": "Inch Calculator, plumbing leak repair",
+          "url": "https://www.inchcalculator.com/cost-to-repair-plumbing-leak/"
+        },
+        {
+          "name": "Repair water-damaged drywall",
+          "low": 300,
+          "high": 850,
+          "typical": 550,
+          "source": "Angi, water damage restoration",
+          "url": "https://angi.com/articles/how-much-does-it-cost-repair-water-damage.htm"
+        },
+        {
+          "name": "Larger water damage restoration (drying, removal, rebuild)",
+          "low": 1270,
+          "high": 5376,
+          "typical": 3250,
+          "when": [
+            "soaked",
+            "flood",
+            "large area",
+            "whole ceiling",
+            "sagging",
+            "carpet"
+          ],
+          "source": "LawnStarter, water damage restoration",
+          "url": "https://www.lawnstarter.com/blog/?p=75887"
+        }
+      ],
+      "questions": [
+        "Where is the water coming from, and how did you confirm it?",
+        "Will you check for mold behind the drywall before closing it up?",
+        "Is the leak repair and the drywall repair priced separately?"
+      ],
+      "tell_apart": "Is the spot wet or growing (a leak), or dry and unchanged for months (an old stain)?",
+      "phrase": "a water stain or leak",
+      "structural": false,
+      "pros": [
+        {
+          "label": "Plumber",
+          "query": "plumber",
+          "osm": [
+            "plumber"
+          ]
+        },
+        {
+          "label": "Roofer",
+          "query": "roofing contractor",
+          "osm": [
+            "roofer"
+          ]
+        },
+        {
+          "label": "Water damage restoration",
+          "query": "water damage restoration",
+          "osm": []
+        }
+      ]
+    },
+    {
+      "id": "plumbing_leak",
+      "name": "Leaking pipe, faucet or drain",
+      "short": "a pipe, fitting or drain is leaking",
+      "photo_cues": [
+        "a leaking pipe under a sink",
+        "water dripping from a pipe joint",
+        "a puddle under a sink cabinet with wet pipes"
+      ],
+      "symptoms": "dripping pipe, leak under the sink, puddle under the cabinet, wet cabinet floor, leaking faucet, water heater leaking, toilet leaking at the base",
+      "base_severity": 3,
+      "worse_if": [
+        "spraying",
+        "burst",
+        "won't stop",
+        "flooding",
+        "constant",
+        "puddle",
+        "water heater",
+        "drips",
+        "dripping",
+        "leaking"
+      ],
+      "trade": "a plumber",
+      "diy": "A loose drain nut or worn faucet washer is often a simple DIY fix. Leaks from supply lines, the water heater or inside walls need a plumber.",
+      "now": [
+        "Turn off the shut-off valve under the sink or toilet, or the main water valve if it's spraying.",
+        "Put a bucket or towels under it and dry the cabinet so you can see where the water starts."
+      ],
+      "tiers": [
+        {
+          "name": "Plumbing leak repair",
+          "low": 50,
+          "high": 800,
+          "typical": 350,
+          "source": "Inch Calculator, plumbing leak repair",
+          "url": "https://www.inchcalculator.com/cost-to-repair-plumbing-leak/"
+        }
+      ],
+      "questions": [
+        "What part failed, and are you replacing just that part or the whole line?",
+        "Is there a trip or service-call fee on top of the labor?",
+        "Do you guarantee the repair, and for how long?"
+      ],
+      "tell_apart": "Can you see water coming from a pipe or fitting, or only a stain on a surface?",
+      "phrase": "a leaking pipe or drain",
+      "structural": false,
+      "pros": [
+        {
+          "label": "Plumber",
+          "query": "plumber",
+          "osm": [
+            "plumber"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mold",
+      "name": "Mold growth",
+      "short": "mold is growing because the area stays damp",
+      "photo_cues": [
+        "black mold spots on a wall",
+        "mold growing in a bathroom corner",
+        "fuzzy green or black mold on a ceiling"
+      ],
+      "symptoms": "black, green or white spots, fuzzy patches, musty smell, mold in the bathroom, mold in the corner of the ceiling, mold behind furniture, mildew",
+      "base_severity": 3,
+      "worse_if": [
+        "large",
+        "spreading",
+        "behind the wall",
+        "after a leak",
+        "musty smell everywhere",
+        "asthma",
+        "allergic",
+        "baby",
+        "keeps coming back"
+      ],
+      "trade": "a mold remediation specialist for anything larger than about 10 square feet, and a plumber or roofer if a leak is feeding it",
+      "diy": "Small surface spots (under about 10 square feet) on hard surfaces can usually be cleaned with detergent and water. Larger patches, mold that keeps returning, or mold after a leak need a professional.",
+      "now": [
+        "Open a window or run the bathroom fan to dry the area.",
+        "Don't dry-brush or sand it: that spreads spores.",
+        "Look for the moisture source: a leak, condensation, or poor ventilation."
+      ],
+      "tiers": [
+        {
+          "name": "Small area on drywall",
+          "low": 150,
+          "high": 350,
+          "source": "HomeAdvisor, drywall repair with mold",
+          "url": "https://www.homeadvisor.com/cost/walls-and-ceilings/repair-drywall"
+        },
+        {
+          "name": "Professional mold remediation",
+          "low": 375,
+          "high": 7000,
+          "when": [
+            "large",
+            "spreading",
+            "behind the wall",
+            "whole",
+            "basement",
+            "keeps coming back",
+            "after a leak"
+          ],
+          "source": "HomeAdvisor, mold remediation",
+          "url": "https://www.homeadvisor.com/cost/walls-and-ceilings/repair-drywall"
+        }
+      ],
+      "questions": [
+        "What's causing the moisture, and is fixing it included?",
+        "How many square feet are affected, and will you test behind the wall?",
+        "Will you contain the area so spores don't spread during removal?"
+      ],
+      "tell_apart": "Is it fuzzy or spotty and smells musty (mold), or a flat brown ring (a water stain)?",
+      "phrase": "mold growth",
+      "structural": false,
+      "pros": [
+        {
+          "label": "Mold remediation",
+          "query": "mold remediation",
+          "osm": []
+        },
+        {
+          "label": "General contractor",
+          "query": "general contractor",
+          "osm": [
+            "builder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall_crack",
+      "name": "Crack in a wall or ceiling",
+      "short": "a crack in drywall, plaster or concrete, often from normal settling",
+      "photo_cues": [
+        "a thin crack in a concrete surface",
+        "a hairline crack in a plaster wall",
+        "a crack running through a wall surface"
+      ],
+      "symptoms": "hairline crack, crack above a door or window, crack in the drywall, crack in the ceiling, crack in plaster, crack in concrete",
+      "base_severity": 2,
+      "worse_if": [
+        "wider",
+        "getting bigger",
+        "growing",
+        "wider than",
+        "1/4",
+        "quarter inch",
+        "door sticks",
+        "doors stick",
+        "won't close",
+        "sloping floor",
+        "uneven floor",
+        "new crack",
+        "sticking",
+        "stuck"
+      ],
+      "trade": "a drywall or plaster pro for cosmetic cracks; a structural engineer if it's growing or doors start sticking",
+      "diy": "Hairline cracks in drywall or plaster are usually cosmetic and can be patched with joint compound and paint.",
+      "now": [
+        "Measure the width and mark both ends with a pencil and the date.",
+        "Check again in a few weeks: a crack that grows or widens needs a professional look."
+      ],
+      "tiers": [
+        {
+          "name": "Drywall or plaster crack repair",
+          "low": 295,
+          "high": 924,
+          "typical": 609,
+          "source": "HomeAdvisor, drywall repair",
+          "url": "https://www.homeadvisor.com/cost/walls-and-ceilings/repair-drywall"
+        },
+        {
+          "name": "Structural engineer inspection",
+          "low": 300,
+          "high": 1000,
+          "when": [
+            "wider",
+            "getting bigger",
+            "growing",
+            "door sticks",
+            "doors stick",
+            "won't close",
+            "sloping floor",
+            "uneven floor",
+            "sticking",
+            "stuck"
+          ],
+          "source": "iPropertyManagement, structural engineer inspection",
+          "url": "https://ipropertymanagement.com/data-statistics/most-expensive-home-repairs"
+        }
+      ],
+      "questions": [
+        "Is this cosmetic, or a sign of movement that will come back?",
+        "Will you tape the crack, not just fill it, so it doesn't reopen?"
+      ],
+      "tell_apart": "Is it a thin straight crack in drywall or plaster, or a stair-step crack in brick or block?",
+      "phrase": "a crack in a wall or ceiling",
+      "structural": true,
+      "pros": [
+        {
+          "label": "Drywall repair",
+          "query": "drywall repair",
+          "osm": [
+            "plasterer",
+            "builder"
+          ]
+        },
+        {
+          "label": "Handyman",
+          "query": "handyman",
+          "osm": [
+            "handyman",
+            "carpenter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foundation_crack",
+      "name": "Stair-step or foundation crack",
+      "short": "a crack in brick, block or a foundation wall that can be a sign of movement",
+      "photo_cues": [
+        "a stair-step crack in a brick wall",
+        "a zigzag crack along mortar joints in a block wall",
+        "a crack in a basement foundation wall"
+      ],
+      "symptoms": "stair-step crack in brick, zigzag crack in mortar, crack in the basement wall, foundation crack, crack in block wall, water coming through a foundation crack",
+      "base_severity": 3,
+      "worse_if": [
+        "wider",
+        "1/4",
+        "quarter inch",
+        "getting bigger",
+        "growing",
+        "door sticks",
+        "doors stick",
+        "won't close",
+        "sloping floor",
+        "bowing",
+        "leaning",
+        "water coming in",
+        "sticking",
+        "stuck"
+      ],
+      "trade": "a foundation repair company, or a structural engineer first for an independent opinion",
+      "diy": "Not a DIY job beyond monitoring. A structural engineer's opinion first helps you judge a foundation company's quote.",
+      "now": [
+        "Measure the width and mark both ends with the date. Photograph it with a coin for scale.",
+        "Check whether doors or windows nearby have started sticking.",
+        "Get an independent structural engineer's opinion before agreeing to a large repair."
+      ],
+      "tiers": [
+        {
+          "name": "Seal or inject a crack",
+          "low": 250,
+          "high": 800,
+          "source": "This Old House, foundation crack filling",
+          "url": "https://www.thisoldhouse.com/foundations/foundation-repair-cost"
+        },
+        {
+          "name": "Structural engineer inspection",
+          "low": 300,
+          "high": 1000,
+          "source": "iPropertyManagement, structural engineer inspection",
+          "url": "https://ipropertymanagement.com/data-statistics/most-expensive-home-repairs"
+        },
+        {
+          "name": "Foundation repair (stabilizing)",
+          "low": 2224,
+          "high": 8134,
+          "typical": 5179,
+          "when": [
+            "wider",
+            "1/4",
+            "quarter inch",
+            "getting bigger",
+            "bowing",
+            "leaning",
+            "sloping floor",
+            "doors stick",
+            "door sticks",
+            "won't close",
+            "sticking",
+            "stuck"
+          ],
+          "source": "This Old House, foundation repair",
+          "url": "https://www.thisoldhouse.com/foundations/foundation-repair-cost"
+        }
+      ],
+      "questions": [
+        "What's causing the movement, and does your repair address the cause?",
+        "Can I see the engineer's report or your measurements?",
+        "Is the warranty transferable if I sell the house?"
+      ],
+      "tell_apart": "Does the crack follow the mortar lines like stairs, and is it wider than about 1/8 inch?",
+      "phrase": "a stair-step or foundation crack",
+      "structural": true,
+      "pros": [
+        {
+          "label": "Foundation repair",
+          "query": "foundation repair contractor",
+          "osm": [
+            "builder"
+          ]
+        },
+        {
+          "label": "Structural engineer",
+          "query": "structural engineer",
+          "osm": []
+        }
+      ]
+    },
+    {
+      "id": "peeling_paint",
+      "name": "Peeling or bubbling paint",
+      "short": "paint losing its grip, often from moisture or poor surface prep",
+      "photo_cues": [
+        "paint peeling off a wall",
+        "flaking and bubbling paint on a ceiling",
+        "chipped paint peeling in strips"
+      ],
+      "symptoms": "peeling paint, flaking paint, bubbling paint, blistering paint, paint coming off, chipping paint on the wall or ceiling",
+      "base_severity": 1,
+      "worse_if": [
+        "bathroom",
+        "wet",
+        "damp",
+        "keeps coming back",
+        "old house",
+        "before 1978",
+        "1960s",
+        "1950s",
+        "kids"
+      ],
+      "trade": "a painter, or a DIY job",
+      "diy": "Usually DIY: scrape loose paint, sand the edges, prime and repaint. If it's in a damp spot, fix the moisture first or it will peel again. In homes built before 1978, test for lead before scraping or sanding.",
+      "now": [
+        "Check for moisture: is it in a bathroom, under a window, or near a stain?",
+        "If the home was built before 1978, don't sand or scrape until you've tested for lead paint."
+      ],
+      "tiers": [
+        {
+          "name": "Repaint one room (professional)",
+          "low": 350,
+          "high": 850,
+          "source": "HomeGuide, interior painting per room",
+          "url": "https://homeguide.com/costs/cost-to-paint-interior-of-house"
+        }
+      ],
+      "questions": [
+        "Will you fix the cause (moisture, missing primer) or just repaint?",
+        "Is surface prep (scraping, priming) included in the price?"
+      ],
+      "tell_apart": "Is the paint flaking off a dry wall, or bubbling over a damp or stained spot (a leak)?",
+      "phrase": "peeling or bubbling paint",
+      "structural": false,
+      "pros": [
+        {
+          "label": "Painter",
+          "query": "house painter",
+          "osm": [
+            "painter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof_damage",
+      "name": "Damaged or missing roof shingles",
+      "short": "shingles are damaged, lifted or missing, so the roof can let water in",
+      "photo_cues": [
+        "missing shingles on a roof",
+        "damaged and curling asphalt shingles",
+        "a roof with storm damage"
+      ],
+      "symptoms": "missing shingles, shingles blew off, curling shingles, granules in the gutter, storm damage on the roof, roof leak, light through the attic",
+      "base_severity": 3,
+      "worse_if": [
+        "leak",
+        "leaking",
+        "water inside",
+        "attic wet",
+        "storm",
+        "rain coming",
+        "multiple",
+        "sagging"
+      ],
+      "trade": "a roofer",
+      "diy": "Not recommended: working on a roof is a common cause of serious falls. Look from the ground with binoculars and call a roofer.",
+      "now": [
+        "Look from the ground or a window. Don't climb onto the roof.",
+        "Check the attic or top-floor ceilings for damp spots after rain.",
+        "If water is coming in, ask a roofer for an emergency tarp."
+      ],
+      "tiers": [
+        {
+          "name": "Shingle repair",
+          "low": 360,
+          "high": 1750,
+          "typical": 960,
+          "source": "Angi, roof shingle repair",
+          "url": "https://www.angi.com/articles/cost-to-repair-asphalt-shingles.htm"
+        },
+        {
+          "name": "Roof leak repair",
+          "low": 350,
+          "high": 1500,
+          "typical": 800,
+          "when": [
+            "leak",
+            "leaking",
+            "water inside",
+            "attic wet"
+          ],
+          "source": "Fixr, roof leak repair",
+          "url": "https://www.fixr.com/costs/repair-roof-leaks"
+        }
+      ],
+      "questions": [
+        "How many shingles need replacing, and will they match?",
+        "Did you check the flashing and underlayment, not just the shingles?",
+        "If it's storm damage, will you document it for an insurance claim?"
+      ],
+      "tell_apart": "Can you see shingles missing or lifted from the outside, or only a stain on a ceiling inside?",
+      "phrase": "damaged or missing roof shingles",
+      "structural": false,
+      "pros": [
+        {
+          "label": "Roofer",
+          "query": "roofing contractor",
+          "osm": [
+            "roofer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outlet_damage",
+      "name": "Damaged, scorched or warm electrical outlet",
+      "short": "an outlet or its wiring is overheating or damaged",
+      "photo_cues": [
+        "a scorched electrical outlet with burn marks",
+        "a melted wall socket",
+        "a cracked electrical outlet cover"
+      ],
+      "symptoms": "outlet is warm, scorch marks on the outlet, melted outlet, outlet sparks, buzzing outlet, outlet stopped working, loose plug, burning smell near an outlet",
+      "base_severity": 4,
+      "worse_if": [
+        "spark",
+        "sparks",
+        "sparking",
+        "smoke",
+        "burning",
+        "melted",
+        "hot",
+        "buzzing",
+        "scorch",
+        "black marks"
+      ],
+      "trade": "a licensed electrician",
+      "diy": "Not a DIY job if it's warm, scorched, sparking or buzzing: those point to wiring problems. A licensed electrician should check it.",
+      "now": [
+        "Unplug everything from it and stop using it.",
+        "Turn off its circuit breaker if you can do that safely.",
+        "Call an electrician today. If you see smoke or flames, leave and call 911."
+      ],
+      "tiers": [
+        {
+          "name": "Outlet repair",
+          "low": 60,
+          "high": 250,
+          "typical": 130,
+          "source": "Angi, electrical outlet repair",
+          "url": "https://angi.com/articles/electrical-outlet-repair-cost.htm"
+        },
+        {
+          "name": "Burned or sparking outlet repair",
+          "low": 150,
+          "high": 400,
+          "when": [
+            "spark",
+            "sparks",
+            "sparking",
+            "burning",
+            "melted",
+            "scorch",
+            "black marks",
+            "smoke"
+          ],
+          "source": "ThePricer, outlet replacement cost",
+          "url": "https://www.thepricer.org/how-much-does-outlet-replacement-cost/"
+        }
+      ],
+      "questions": [
+        "What caused it to overheat, and did you check the wiring and the box?",
+        "Are other outlets on the same circuit at risk?",
+        "Is a permit or inspection needed for this repair?"
+      ],
+      "tell_apart": "Is the outlet warm, discolored or sparking, or has it just stopped working?",
+      "phrase": "a damaged or overheating electrical outlet",
+      "structural": false,
+      "pros": [
+        {
+          "label": "Electrician",
+          "query": "electrician",
+          "osm": [
+            "electrician"
+          ]
+        }
+      ]
+    }
+  ],
+  "hazards": [
+    {
+      "id": "gas",
+      "patterns": [
+        "smell(s|ing)? (of |like )?gas",
+        "gas (smell|odou?r)",
+        "rotten eggs?",
+        "gas leak",
+        "hiss\\w*[^.]{0,60}(smell|odou?r|gas)",
+        "(smell|odou?r)[^.]{0,60}hiss",
+        "hiss\\w*[^.]{0,40}(stove|furnace|water heater|gas line|pipe|meter|dryer)"
+      ],
+      "title": "Possible gas leak: leave now",
+      "steps": [
+        "Leave the house now and get everyone out.",
+        "Don't switch lights on or off, use the phone inside, or start a car in the garage.",
+        "Once outside, call 911 or your gas company's emergency line."
+      ]
+    },
+    {
+      "id": "electrical_fire",
+      "patterns": [
+        "\\bsmok(e|ing|ed)\\b(?!\\s*(detector|alarm))",
+        "\\bflames?\\b",
+        "on fire",
+        "\\bsparks?\\b(?!\\s*plugs?)",
+        "sparking",
+        "spark shot",
+        "burning (smell|odou?r|plastic)",
+        "smells? (like |of )?(something )?(is )?burn(ing|t)",
+        "burnt plastic",
+        "scorch\\w*",
+        "(plug|socket|outlet|cord|wire|wires|wiring|switch|panel|breaker|power strip|heater)[^.]{0,40}melt\\w*",
+        "melt\\w*[^.]{0,40}(plug|socket|outlet|cord|wire|wires|wiring|switch|panel|breaker|power strip|heater)"
+      ],
+      "title": "Electrical fire risk: stop using it",
+      "steps": [
+        "If there's smoke or flames, leave the house and call 911.",
+        "Otherwise turn off the circuit breaker for that area if you can do it safely, and unplug nothing that's hot.",
+        "Don't use that outlet or switch until a licensed electrician has checked it."
+      ]
+    },
+    {
+      "id": "water_and_power",
+      "patterns": [
+        "water (in|into|from|near|on|onto|coming out of|running (down )?(into|onto)) (the |a |my )?(electrical |electric )?(light|fixture|outlet|socket|switch|panel|breaker|box|power strip)",
+        "(dripping|leaking|coming|pouring|running|seeping) (from|out of|into|through|onto) (the |a |my )?(ceiling |electrical |electric )?(light|fixture|outlet|socket|switch|panel|breaker|box|power strip)",
+        "(light|fixture|outlet|socket|switch|panel|power strip)[^.]{0,30}(is )?(wet|full of water|filled (up )?with water|dripping|soaked)",
+        "water[^.]{0,40}(onto|into|on) (the |a |my )?(power strip|outlet|socket|extension cord|electrical panel|breaker)"
+      ],
+      "title": "Water near electricity: turn off the power",
+      "steps": [
+        "Don't touch the fixture, outlet or any water near it.",
+        "Turn off the breaker for that area if you can reach the panel without standing in water.",
+        "Turn off the water supply, then call an electrician and a plumber."
+      ]
+    },
+    {
+      "id": "ceiling_collapse",
+      "patterns": [
+        "ceiling[^.]{0,40}(sagg\\w*|bulg\\w*|bowing|bowed|droop\\w*|swell\\w*|might (burst|collapse|fall)|caving)",
+        "(sagg\\w*|bulg\\w*|droop\\w*|swollen|caving)[^.]{0,30}ceiling",
+        "huge bulge",
+        "(bulging|water) bubble in (the |my )?ceiling"
+      ],
+      "title": "The ceiling could come down: stay out from under it",
+      "steps": [
+        "Keep everyone and pets out of the room.",
+        "Turn off the water to that area or the main valve.",
+        "Put a bucket under the low point and call a plumber or water damage company now."
+      ]
+    },
+    {
+      "id": "carbon_monoxide",
+      "patterns": [
+        "carbon monoxide (alarm|detector)[^.]{0,30}(going off|went off|beep|sound|reading|high)",
+        "carbon monoxide (leak|poisoning)",
+        "\\bco (alarm|detector)[^.]{0,30}(going off|went off|beep|sound|reading|high)",
+        "(we|i|everyone) (feel|feels|are) dizzy[^.]{0,40}(co|carbon monoxide|alarm)",
+        "(going off|went off)[^.]{0,30}(carbon monoxide|co detector|co alarm)"
+      ],
+      "title": "Carbon monoxide alarm: get out",
+      "steps": [
+        "Get everyone outside into fresh air now.",
+        "Call 911 from outside.",
+        "Don't go back in until responders say it's safe."
+      ]
+    },
+    {
+      "id": "sewage",
+      "patterns": [
+        "sewage",
+        "sewer (backup|back up|smell)",
+        "smells? like (a )?sewer",
+        "toilet water (coming up|backing up)",
+        "(drain|toilet|shower|tub) (is )?(backing up|overflowing)",
+        "backing up into the (tub|shower|sink)"
+      ],
+      "title": "Sewage backup: avoid contact",
+      "steps": [
+        "Keep children and pets away and don't touch the water without gloves and boots.",
+        "Stop using sinks, toilets and appliances that drain.",
+        "Call a plumber now; soaked materials usually need professional cleanup."
+      ]
+    }
+  ]
+}

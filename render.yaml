@@ -1,0 +1,15 @@
+# Render: New > Blueprint > pick this repo. The photo model needs ~1 GB RAM, so use at least the
+# "standard" plan (the free plan's 512 MB is not enough).
+services:
+  - type: web
+    name: home-repair-check
+    runtime: docker
+    plan: standard
+    healthCheckPath: /api/meta
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: GOOGLE_PLACES_API_KEY
+        sync: false
+      - key: RATE_LIMIT
+        value: "15"

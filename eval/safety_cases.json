@@ -1,0 +1,217 @@
+{
+ "_note": "Written by the author before the first eval run. Positives must trigger the named warning; negatives are near-misses that must not trigger any.",
+ "positives": [
+  {
+   "text": "i smell gas in the kitchen",
+   "hazard": "gas"
+  },
+  {
+   "text": "there's a rotten egg smell near the furnace",
+   "hazard": "gas"
+  },
+  {
+   "text": "we think we have a gas leak",
+   "hazard": "gas"
+  },
+  {
+   "text": "hissing sound coming from near the water heater and a weird smell",
+   "hazard": "gas"
+  },
+  {
+   "text": "the outlet sparked and now there's smoke",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "burning smell coming from the light switch",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "the plug melted into the socket",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "sparks came out when I plugged in the toaster",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "the breaker panel smells like something is burning",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "I saw a small flame behind the outlet",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "water is dripping out of the ceiling light",
+   "hazard": "water_and_power"
+  },
+  {
+   "text": "there's water coming out of the light fixture in the bathroom",
+   "hazard": "water_and_power"
+  },
+  {
+   "text": "the outlet near the sink is wet and full of water",
+   "hazard": "water_and_power"
+  },
+  {
+   "text": "water leaking into the electrical panel in the basement",
+   "hazard": "water_and_power"
+  },
+  {
+   "text": "the ceiling is sagging from the water",
+   "hazard": "ceiling_collapse"
+  },
+  {
+   "text": "there's a big bulging bubble in the ceiling",
+   "hazard": "ceiling_collapse"
+  },
+  {
+   "text": "the ceiling is bowing down and dripping",
+   "hazard": "ceiling_collapse"
+  },
+  {
+   "text": "the drywall on the ceiling is drooping after the leak",
+   "hazard": "ceiling_collapse"
+  },
+  {
+   "text": "our carbon monoxide detector is going off",
+   "hazard": "carbon_monoxide"
+  },
+  {
+   "text": "the CO alarm keeps beeping and we feel dizzy",
+   "hazard": "carbon_monoxide"
+  },
+  {
+   "text": "sewage is coming up in the basement drain",
+   "hazard": "sewage"
+  },
+  {
+   "text": "the toilet is backing up into the tub",
+   "hazard": "sewage"
+  },
+  {
+   "text": "sewer backup in the laundry room",
+   "hazard": "sewage"
+  },
+  {
+   "text": "dirty water coming up from the shower drain and it smells like sewage",
+   "hazard": "sewage"
+  },
+  {
+   "text": "smoke coming from the outlet behind the tv",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "my extension cord got so hot it melted",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "lights flicker and I smell burning plastic",
+   "hazard": "electrical_fire"
+  },
+  {
+   "text": "water is pouring through the light fixture",
+   "hazard": "water_and_power"
+  },
+  {
+   "text": "there's a gas smell outside by the meter",
+   "hazard": "gas"
+  },
+  {
+   "text": "the kitchen drain is backing up with sewage",
+   "hazard": "sewage"
+  }
+ ],
+ "negatives": [
+  {
+   "text": "my smoke detector keeps beeping, probably the battery"
+  },
+  {
+   "text": "our gas bill went up this winter"
+  },
+  {
+   "text": "the stove burner won't light"
+  },
+  {
+   "text": "no sparks, the outlet just stopped working"
+  },
+  {
+   "text": "i want to replace the spark plug on my lawn mower"
+  },
+  {
+   "text": "the ceiling paint is peeling a bit"
+  },
+  {
+   "text": "there's a small water stain on the ceiling that hasn't changed in years"
+  },
+  {
+   "text": "the faucet drips a little"
+  },
+  {
+   "text": "the light switch feels loose"
+  },
+  {
+   "text": "we're thinking about a gas stove"
+  },
+  {
+   "text": "the toilet runs constantly"
+  },
+  {
+   "text": "musty smell in the basement"
+  },
+  {
+   "text": "a light bulb burned out in the hallway"
+  },
+  {
+   "text": "the drain is slow in the bathroom sink"
+  },
+  {
+   "text": "there's a crack in the ceiling"
+  },
+  {
+   "text": "the outlet works but the cover is cracked"
+  },
+  {
+   "text": "my hot water takes a long time to get hot"
+  },
+  {
+   "text": "the shower head is clogged"
+  },
+  {
+   "text": "the attic is very warm in summer"
+  },
+  {
+   "text": "the dryer takes forever to dry clothes"
+  },
+  {
+   "text": "water heater is making popping noises"
+  },
+  {
+   "text": "the floor creaks"
+  },
+  {
+   "text": "burnt toast set off the smoke alarm earlier"
+  },
+  {
+   "text": "the fireplace smells smoky when not in use"
+  },
+  {
+   "text": "we smell something musty after rain"
+  },
+  {
+   "text": "dishwasher leaves water at the bottom"
+  },
+  {
+   "text": "sink drain smells bad"
+  },
+  {
+   "text": "the GFCI outlet keeps tripping"
+  },
+  {
+   "text": "condensation on the windows in the morning"
+  },
+  {
+   "text": "the chimney has some soot"
+  }
+ ]
+}

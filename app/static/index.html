@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Repair Check: what is it, how urgent, what should it cost, who to call</title>
+  <meta name="description" content="Snap a photo of a home problem and get what it probably is, how urgent it is, what it should cost, and real repair pros near you, with every safety warning and price decided by code, not AI.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232357d9'/%3E%3Cpath d='M8 16l8-7 8 7v8H8z' fill='none' stroke='white' stroke-width='2.4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script>/* apply the saved theme before paint, so there's no flash */
+    try { const t = localStorage.getItem("rc.theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+  <link rel="stylesheet" href="/static/app.css?v=4">
+</head>
+<body>
+  <a class="skip" href="#form">Skip to the check</a>
+  <header class="top">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9"/><path d="M8 16l8-7 8 7v8H8z"/></svg>
+      Home Repair Check
+    </a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="/evals">Evals</a>
+      <a href="https://github.com/arpit-sutariya/home-repair-check" target="_blank" rel="noopener">GitHub</a>
+      <span class="engine" id="engine" title="Which AI picks the problem">…</span>
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch light or dark theme"></button>
+    </nav>
+  </header>
+
+  <div class="warming" id="warming" hidden role="status">
+    <span class="spin" aria-hidden="true"></span> Starting the local AI models (first start only). You can fill in the form now.
+  </div>
+
+  <div class="hero-band">
+    <section class="hero">
+      <p class="eyebrow"><span class="dot"></span> Photo + description → diagnosis, urgency, fair price, local pros</p>
+      <h1>Something wrong at home?<br><span>Get a straight answer in a minute.</span></h1>
+      <p class="lede">Snap a photo and tell us what's going on. See what it probably is, how urgent it is, what it should cost, and who near you can fix it, so a quote doesn't catch you off guard.</p>
+      <div class="stats">
+        <a class="stat" href="/evals"><b>81%</b><span>right on real photos</span></a>
+        <a class="stat" href="/evals"><b>92%</b><span>right on descriptions</span></a>
+        <a class="stat" href="/evals"><b>19/20</b><span>unseen emergencies caught</span></a>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <form class="ask" id="form" novalidate>
+      <div class="step step-photo">
+        <div class="step-h"><span class="stepn">1</span>Add a photo <span class="opt">optional</span></div>
+        <label class="drop" id="drop" tabindex="0">
+          <input type="file" id="file" accept="image/*" hidden>
+          <div class="drop-empty" id="drop-empty">
+            <span class="drop-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+            <b>Tap to add a photo</b><span>or drop / paste an image</span>
+          </div>
+          <img id="preview" alt="Your photo" hidden>
+          <button type="button" class="remove" id="remove" hidden aria-label="Remove photo">×</button>
+        </label>
+        <div class="samples">
+          <div class="mini">No photo handy? Try a sample:</div>
+          <div class="sample-row" id="samples"></div>
+        </div>
+      </div>
+
+      <div class="step step-text">
+        <div class="step-h"><span class="stepn">2</span><label for="text">What's going on?</label></div>
+        <textarea id="text" rows="4" maxlength="1500" placeholder="e.g. A brown ring appeared on the ceiling under our upstairs bathroom. It's a bit bigger than last week."></textarea>
+        <div class="count" id="count" aria-live="polite"></div>
+        <div class="examples" id="examples" aria-label="Example descriptions"></div>
+
+        <div class="step-h"><span class="stepn">3</span>Where is it?</div>
+        <div class="pills" id="where" role="group" aria-label="Which part of the house"></div>
+
+        <div class="area">
+          <label class="area-in" for="place">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <input id="place" autocomplete="postal-code" placeholder="Your city, neighborhood or ZIP, e.g. USC, Los Angeles">
+          </label>
+          <button type="button" class="btn ghost" id="locate"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>Use my location</button>
+        </div>
+        <p class="mini">Used to find repair pros near you. Sent to the listings service, never stored.</p>
+
+        <button class="go" id="go" type="submit"><span>Check it</span> <kbd>⌘↵</kbd></button>
+        <p class="fine">Photos are analysed in memory and never stored.</p>
+      </div>
+    </form>
+
+    <section id="result" hidden aria-live="polite"></section>
+
+    <section class="how" id="how">
+      <h2>How it works</h2>
+      <p class="sub">The AI answers one question, “which problem is this?”. Everything that has to be right every time is plain, tested code.</p>
+      <div class="how-cards">
+        <div class="hcard"><span class="hicon code"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>1 · Safety rules first</h3><p>Gas, sparks, CO, water near power: hard-coded rules check your words before any AI runs. All 100 safety test cases are permanent regression tests.</p></div>
+        <div class="hcard"><span class="hicon ai"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span>
+          <h3>2 · AI identifies the problem</h3><p>CLIP compares your photo with written visual cues; a text model reads your description. Or Claude, with an API key. It says “not sure” instead of guessing.</p></div>
+        <div class="hcard"><span class="hicon code"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <h3>3 · Code prices it and finds pros</h3><p>Urgency, sourced price ranges and the quote check come from a knowledge file. Local pros come from real listings, never generated.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>General guidance from a photo and a description, not a professional inspection. Price ranges are national averages from public cost guides; local prices vary. Contractor listings aren't vetted. If anything feels unsafe, call a professional or emergency services.</p>
+    <p class="credit">Sample photos: <a href="https://huggingface.co/datasets/senthilsk/crack_detection_dataset" target="_blank" rel="noopener">crack_detection_dataset</a> (CC BY 4.0). They are also in the test set, so they show how the app works, not how accurate it is. See <a href="/evals">Evals</a> for that.</p>
+  </footer>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script src="/static/app.js?v=4"></script>
+</body>
+</html>
